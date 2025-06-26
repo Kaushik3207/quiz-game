@@ -14,7 +14,7 @@ The game welcomes the user, presents a series of multiple-choice questions, trac
 
 ## Prerequisites
 
--   Python 3.x
+-   Python 3.13.3
 -   `colorama` library
 
 ## Installation & Setup
