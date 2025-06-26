@@ -1,23 +1,55 @@
-# My first python project!
+# Python CLI Quiz Game
 
-Hi, Kaushik this side, I am going to keep this short.
-Basically this was my first project after self-learning python as a language. I often struggled with the while loop, which is why I decided to make this project
-in the first place. I tried my best to use the while loop in the main code and succeded after a few trial and errors. The most difficult part was to get the scoring system to work properly and not repeat the same question again and again.
+This repository contains a simple, interactive command-line quiz game built with Python. It serves as a great introductory project for understanding core concepts like loops, conditional statements, user input, and working with data structures like lists and dictionaries.
 
-### I referred to the following <a href= "https://www.youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0">playlist
-### by ApnaCollege religiously to learn python basics, after which I was able to build this project.
+The game welcomes the user, presents a series of multiple-choice questions, tracks the score, and provides feedback on the answers.
 
----
+## Features
 
-The project is very simple when executed, it includes three questions(customizable), and upon executing the project first gives you a set of instructions to read
-and asks your name. 
-After this basic introduction, the program starts and shows the questions to you and then prompts you to enter the appropriate option number to the question, right 
-answer earns you 2 points, wrong one tells you the right answer and moves on to the next question.
-I am happy and excited to share this even if as a baby step in my journey.
+-   Interactive command-line interface with colored text for enhanced readability.
+-   A series of multiple-choice questions.
+-   Real-time score tracking, with 2 points awarded for each correct answer.
+-   The final score is displayed upon completion of the quiz.
+-   Easily customizable questions and answers directly within the script.
 
----
+## Prerequisites
 
-One can easily test out this code on their own computers by simply downloading the quizGame.py file in this repository and running it on any code editor or IDE.
+-   Python 3.x
+-   `colorama` library
 
-### Thank you!
-for reading so far, Have a look at the project and let me know any criticism regarding it!
+## Installation & Setup
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/kaushik3207/quiz-game.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```sh
+    cd quiz-game
+    ```
+
+3.  **Install the required dependency:**
+    The project uses the `colorama` library to display colored text in the terminal.
+    ```sh
+    pip install colorama
+    ```
+
+## How to Play
+
+Run the script from your terminal using the following command:
+
+```sh
+python quizGame.py
+```
+
+The game will start by displaying a welcome message and instructions. It will then prompt you for your name and begin the quiz. For each question, enter the number corresponding to your chosen answer and press Enter.
+
+## Customization
+
+You can easily modify, add, or remove questions by editing the `questions` list at the beginning of the `quizGame.py` file.
+
+Each question is a dictionary with the following structure:
+-   `question`: The text of the question (string).
+-   `options`: A list of possible answers (list of strings).
+-   `correct`: The 0-based index of the correct answer in the `options` list (integer).
